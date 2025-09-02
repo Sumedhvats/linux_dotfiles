@@ -1,0 +1,9 @@
+{
+    "code-runner.runInTerminal": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "debug.onTaskErrors": "abort",
+    "redhat.telemetry.enabled": true,
+    "gitlens.views.branches.files.layout": "list",
+    "makefile.configureOnOpen": true,
+    "terminal.integrated.defaultProfile.linux": "zsh"
+}

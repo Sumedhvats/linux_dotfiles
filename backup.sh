@@ -1,34 +1,33 @@
-#!/usr/bin/env bash
+#!/bin/bash
 set -e
 
-echo "📦 Backing up packages..."
-mkdir -p ./packages
-dpkg --get-selections > ./packages/apt-packages.txt
-flatpak list --app --columns=application > ./packages/flatpak-list.txt
-snap list > ./packages/snap-list.txt || true   # skip if no snap
+BACKUP_DIR="$HOME/dotfiles"
+
+echo "📦 Backing up apt packages..."
+dpkg --get-selections > "$BACKUP_DIR/packages.list"
 
 echo "🐚 Backing up Zsh + Oh My Zsh..."
-mkdir -p ./configs/zsh
-cp ~/.zshrc ./configs/zsh/ 2>/dev/null || true
-cp ~/.p10k.zsh ./configs/zsh/ 2>/dev/null || true
-cp -r ~/.oh-my-zsh/custom ./configs/zsh/ 2>/dev/null || true
+cp -r ~/.zshrc "$BACKUP_DIR/"
+cp -r ~/.oh-my-zsh "$BACKUP_DIR/oh-my-zsh"
 
 echo "🖥️ Backing up Ghostty..."
-mkdir -p ./configs/ghostty
-cp -r ~/.config/ghostty/* ./configs/ghostty/ 2>/dev/null || true
+mkdir -p "$BACKUP_DIR/ghostty"
+cp -r ~/.config/ghostty/* "$BACKUP_DIR/ghostty/"
 
 echo "📝 Backing up VS Code..."
-mkdir -p ./configs/vscode/User
-cp -r ~/.config/Code/User/* ./configs/vscode/User/ 2>/dev/null || true
-code --list-extensions > ./configs/vscode/extensions.txt || true
+mkdir -p "$BACKUP_DIR/vscode"
+cp -r ~/.config/Code/User/* "$BACKUP_DIR/vscode/"
 
 echo "🔤 Backing up Fonts..."
-mkdir -p ./fonts
-cp -r ~/.local/share/fonts/* ./fonts/ 2>/dev/null || true
+mkdir -p "$BACKUP_DIR/fonts"
+cp -r ~/.local/share/fonts/* "$BACKUP_DIR/fonts/"
 
 echo "🧩 Backing up GNOME Extensions..."
-mkdir -p ./extensions
-gnome-extensions list > ./extensions/gnome-extensions.txt || true
-dconf dump /org/gnome/shell/extensions/ > ./extensions/extensions-settings.conf || true
+mkdir -p "$BACKUP_DIR/gnome/extensions"
+cp -r ~/.local/share/gnome-shell/extensions/* "$BACKUP_DIR/gnome/extensions/"
 
-echo "✅ Backup complete! Don’t forget to git add/commit/push"
+echo "=== Backing up GNOME settings (including shortcuts) ==="
+mkdir -p "$BACKUP_DIR/gnome"
+dconf dump /org/gnome/ > "$BACKUP_DIR/gnome/settings.dconf"
+
+echo "✅ Backup complete! Stored in $BACKUP_DIR"

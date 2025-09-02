@@ -32,4 +32,7 @@ echo "🧩 Installing GNOME extensions..."
 xargs -n1 gnome-extensions enable < ./extensions/gnome-extensions.txt
 dconf load /org/gnome/shell/extensions/ < ./extensions/extensions-settings.conf
 
+
+echo "=== Restoring GNOME settings (including shortcuts) ==="
+dconf load /org/gnome/ < gnome/gnome-settings.dconf
 echo "✅ Setup complete!"

@@ -1,0 +1,11 @@
+{
+    "code-runner.runInTerminal": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "debug.onTaskErrors": "abort",
+    "redhat.telemetry.enabled": true,
+    "gitlens.views.branches.files.layout": "list",
+    "makefile.configureOnOpen": true,
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace,'FiraCode Nerd Font'",
+    "explorer.confirmDragAndDrop": false
+}
