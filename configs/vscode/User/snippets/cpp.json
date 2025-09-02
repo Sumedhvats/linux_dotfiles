@@ -1,0 +1,71 @@
+{
+    "cpp snippets":
+    {
+        "prefix" : "basic",
+                   "body" : [
+                       "#include<iostream>",
+                       "using namespace std;",
+                       "int main()",
+                       "{",
+                       "    return 0;",
+                       "}"
+  
+                   ],
+                            "description" : "c++ basic"
+    },
+    "Display all elements of array":{
+        "prefix" : "printarray",
+                   "body" : [
+                    "for(int i=0; i<n; i++) {",
+                        "cout << arr[i];"
+  
+                   ],
+                            "description" : "print array"
+    },
+    "Sort element code":{
+        "prefix" : "sont",
+                   "body" : [
+                    "int Smallest(int a[],int n,int i){",
+                        "int  min = i;",
+                         "for (int j = i + 1; j < n; j++) {",
+                             "if (a[min] > a[j]) {",
+                                 "min = j;",
+                             "}",
+                     "}",
+                     "return min;",
+                 "}",
+                 "int* selectionSort(int arr[], int n){",
+                     "for (int i = 0; i < n; i++) {",
+                     "int min=Smallest(arr, n,i);",
+                     "if (min != i) {",
+                         "swap(arr[min], arr[i]);",
+                         "}",
+                         "}",
+                     "return arr;",
+                 "}",
+                 "int* Bubble(int arr[],int n){",
+                      "for (int i = 0; i < n; i++) {",
+                         "for (int j = 0; j < n - 1; j++) {",
+                             "if (arr[j + 1] < arr[j]) {",
+                                "swap(arr[j],arr[j+1]);",
+                                "}",
+                            "}",
+                     "}",
+                     "return arr;",
+                "}",
+                 "int* Insertion(int arr[],int n){",
+                      "for (int i = 0; i < n-1 ;i++) {",
+                     "for (int j = i+1; j >0; j--) {",
+                         "if(arr[j]<arr[j-1]){",
+                             "swap(arr[j],arr[j-1]);",
+                         "}else{break;}",
+                     "}",
+                  "}",
+                      "return arr;",
+                    "}",
+  
+                   ],
+                            "description" : "sont the array"
+    },
+
+}

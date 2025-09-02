@@ -1,0 +1,137 @@
+{
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "049eb91f3ae44f45cd31a7602b5aa730f6110c77a6939415f674dca2b8801405",
+    "telemetry.devDeviceId": "6ae63a35-8e9b-41bb-b6c7-05f0dd722603",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [
+            {
+                "folderUri": "file:///home/sumedh/Code/go_learning/quiz_cli"
+            }
+        ],
+        "emptyWindows": []
+    },
+    "windowControlHeight": 35,
+    "profileAssociations": {
+        "workspaces": {
+            "file:///home/sumedh/Code/cohort_3/secondBrain": "__default__profile__",
+            "file:///home/sumedh/Code/fullStack": "__default__profile__",
+            "file:///home/sumedh/Code/resumeParser": "__default__profile__",
+            "file:///home/sumedh/Code": "__default__profile__",
+            "file:///home/sumedh/Code/Skill-Wala": "__default__profile__",
+            "file:///home/sumedh/Code/go_learning": "__default__profile__",
+            "file:///home/sumedh/Code/ADMS_23BCS11261_KRG1B": "__default__profile__",
+            "file:///home/sumedh/github-classroom/CU-2025/worksheet-1-Sumedhvats": "__default__profile__",
+            "file:///home/sumedh/Downloads": "__default__profile__",
+            "file:///home/sumedh/Code/daa_Assesment/DAA_23BCS10712_KRG-1B": "__default__profile__",
+            "file:///home/sumedh/Code/daa_Assesment/DAA_23BCS11261_KRG-1B": "__default__profile__",
+            "file:///home/sumedh/Code/resumeParser/resume": "__default__profile__",
+            "file:///home/sumedh/Code/go_learning/quiz_cli": "__default__profile__"
+        },
+        "emptyWindows": {}
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#1f1f1f",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#cccccc",
+            "background": "#1f1f1f",
+            "editorBackground": "#1f1f1f",
+            "titleBarBackground": "#181818",
+            "titleBarBorder": "#2b2b2b",
+            "activityBarBackground": "#181818",
+            "activityBarBorder": "#2b2b2b",
+            "sideBarBackground": "#181818",
+            "sideBarBorder": "#2b2b2b",
+            "statusBarBackground": "#181818",
+            "statusBarBorder": "#2b2b2b",
+            "statusBarNoFolderBackground": "#1f1f1f"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 48,
+            "sideBarWidth": 300,
+            "auxiliaryBarWidth": 300,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///home/sumedh/Code/go_learning/quiz_cli",
+            "backupPath": "/home/sumedh/.config/Code/Backups/65509d366ec45e9d71f198227d87cb38",
+            "uiState": {
+                "mode": 0,
+                "x": 360,
+                "y": 140,
+                "width": 1200,
+                "height": 800
+            }
+        },
+        "openedWindows": []
+    },
+    "windowSplashWorkspaceOverride": {
+        "layoutInfo": {
+            "sideBarWidth": 300,
+            "auxiliaryBarWidth": 300,
+            "workspaces": {
+                "1b51c37b8b08936ae771512572c8d3cd": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "11dfc582d7823438fdf2888f2d517395": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "7b38ebe4f3ecb48303b99c53c602b49b": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "34753027ae464eaedffe6cf59f648f00": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "74bb7da0235129c5aeccfde40316f491": {
+                    "sideBarVisible": false,
+                    "auxiliaryBarVisible": true
+                },
+                "9d969e1cddc4ea511839bffbad1458cd": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "5605a34cad0cfc15789bc5e79affbdff": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "7dce6d7629e7fc5652122447738a3f68": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "f1cd638f1b2ed5bcf617a07df957ee2a": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "90e5f40716c35dc2c77cdccf831e606f": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "db88639bfd1324c45ec7c8f19b97fac9": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "e7708c4f74b6c8121582157f17782b09": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "330ca4691b81c8454313d2f60096b298": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+package golearning
+
+ type Shape interface{
+	Area() float64
+ }
+type Rectangle struct {
+    length  float64
+    breadth float64
+}
+
+type Circle struct {
+    radius float64
+}
