@@ -1,6 +1,15 @@
+[Snapshot]
+is-maximized=false
+window-height=640
+window-width=800
+
 [Totem]
 active-plugins=['movie-properties', 'screenshot', 'mpris', 'recent', 'autoload-subtitles', 'open-directory', 'save-file', 'variable-rate', 'rotation', 'screensaver', 'skipto']
 subtitle-encoding='UTF-8'
+
+[baobab/ui]
+is-maximized=false
+window-size=(960, 600)
 
 [calculator]
 base=10
@@ -10,16 +19,16 @@ source-currency=''
 source-units='degree'
 target-currency=''
 target-units='radian'
-window-maximized=true
+window-maximized=false
 window-size=(360, 616)
 
 [control-center]
-last-panel='keyboard'
+last-panel='bluetooth'
 window-state=(980, 640, true)
 
 [deja-dup]
 backend='google'
-prompt-check='2025-08-11T11:47:54.506512Z'
+prompt-check='2025-09-10T14:40:38.186862Z'
 
 [desktop/app-folders]
 folder-children=['System', 'Utilities', 'YaST', 'Pardus']
@@ -77,8 +86,11 @@ show-battery-percentage=true
 toolkit-accessibility=false
 
 [desktop/notifications]
-application-children=['org-gnome-shell-extensions-gsconnect', 'jetbrains-idea', 'pgadmin4', 'brave-browser', 'org-gnome-nautilus', 'com-mattjakeman-extensionmanager', 'spotify', 'gnome-power-panel', 'libreoffice-impress', 'libreoffice-writer', 'libreoffice-startcenter']
-show-banners=true
+application-children=['org-gnome-shell-extensions-gsconnect', 'jetbrains-idea', 'pgadmin4', 'brave-browser', 'org-gnome-nautilus', 'com-mattjakeman-extensionmanager', 'spotify', 'gnome-power-panel', 'libreoffice-impress', 'libreoffice-writer', 'libreoffice-startcenter', 'org-gnome-settings', 'motrix', 'org-gnome-software', 'apport-gtk', 'org-mozilla-firefox', 'org-gnome-dejadup', 'steam']
+show-banners=false
+
+[desktop/notifications/application/apport-gtk]
+application-id='apport-gtk.desktop'
 
 [desktop/notifications/application/brave-browser]
 application-id='brave-browser.desktop'
@@ -101,11 +113,26 @@ application-id='libreoffice-startcenter.desktop'
 [desktop/notifications/application/libreoffice-writer]
 application-id='libreoffice-writer.desktop'
 
+[desktop/notifications/application/motrix]
+application-id='motrix.desktop'
+
+[desktop/notifications/application/org-gnome-dejadup]
+application-id='org.gnome.DejaDup.desktop'
+
 [desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
 
+[desktop/notifications/application/org-gnome-settings]
+application-id='org.gnome.Settings.desktop'
+
 [desktop/notifications/application/org-gnome-shell-extensions-gsconnect]
 application-id='org.gnome.Shell.Extensions.GSConnect.desktop'
+
+[desktop/notifications/application/org-gnome-software]
+application-id='org.gnome.Software.desktop'
+
+[desktop/notifications/application/org-mozilla-firefox]
+application-id='org.mozilla.firefox.desktop'
 
 [desktop/notifications/application/pgadmin4]
 application-id='pgadmin4.desktop'
@@ -113,8 +140,11 @@ application-id='pgadmin4.desktop'
 [desktop/notifications/application/spotify]
 application-id='spotify.desktop'
 
+[desktop/notifications/application/steam]
+application-id='steam.desktop'
+
 [desktop/peripherals/keyboard]
-numlock-state=true
+numlock-state=false
 
 [desktop/peripherals/mouse]
 accel-profile='flat'
@@ -142,6 +172,12 @@ idle-delay=uint32 0
 
 [desktop/wm/keybindings]
 close=['<Alt>4']
+move-to-workspace-left=@as []
+move-to-workspace-right=@as []
+switch-group=@as []
+switch-group-backward=@as []
+switch-to-workspace-left=@as []
+switch-to-workspace-right=@as []
 
 [evolution-data-server]
 migrated=true
@@ -167,6 +203,9 @@ toggle-tiled-right=@as []
 
 [nautilus/icon-view]
 default-zoom-level='medium'
+
+[nautilus/list-view]
+default-zoom-level='small'
 
 [nautilus/preferences]
 default-folder-viewer='list-view'
@@ -197,16 +236,34 @@ sizing-mode='free'
 window-height=600
 window-maximized=true
 window-width=600
-zoom=0.8149509803921573
+zoom=0.52808823529411786
 
 [portal/filechooser/brave-browser]
 last-folder-path='/home/sumedh/Downloads'
 
 [portal/filechooser/code]
-last-folder-path='/home/sumedh/Code/go_learning'
+last-folder-path='/home/sumedh/Code/fullstackCu'
+
+[portal/filechooser/com.github.geigi.cozy]
+last-folder-path='/home/sumedh/Audiobooks'
+
+[portal/filechooser/org.chromium.Chromium]
+last-folder-path='/home/sumedh/Downloads'
+
+[portal/filechooser/org.localsend.localsend_app]
+last-folder-path='/home/sumedh/Downloads'
+
+[portal/filechooser/org.mozilla.firefox]
+last-folder-path='/home/sumedh/Documents'
 
 [portal/filechooser/pgadmin4]
 last-folder-path='/home/sumedh/Documents/adbs'
+
+[portal/filechooser/steam]
+last-folder-path='/media/sumedh/external'
+
+[portal/filechooser/transient]
+last-folder-path='/home/sumedh/Code/urlShortner'
 
 [settings-daemon/plugins/color]
 night-light-schedule-automatic=false
@@ -221,13 +278,13 @@ command='code'
 name='vsCode'
 
 [settings-daemon/plugins/media-keys/custom-keybindings/custom1]
-binding='<Control>Right'
-command='xdotool key ctrl+Tab'
+binding='<Alt>Right'
+command='~/.local/bin/brave-right.sh\n'
 name='brave right'
 
 [settings-daemon/plugins/media-keys/custom-keybindings/custom2]
-binding='<Control>Left'
-command='xdotool key ctrl+shift+Tab'
+binding='<Alt>Left'
+command='~/.local/bin/brave-left.sh\n'
 name='brave left'
 
 [settings-daemon/plugins/power]
@@ -274,7 +331,8 @@ brightness=0.59999999999999998
 sigma=30
 
 [shell/extensions/color-picker]
-color-history=[uint32 2759967, 16777215, 11578285, 1199731, 16776437, 16777215, 16776437, 3301243]
+color-history=[uint32 4602685, 2759967, 16777215, 11578285]
+menu-size=uint32 4
 
 [shell/extensions/coverflowalttab]
 switcher-background-color=(0.82745098039215681, 0.27450980392156865, 0.082352941176470587)
@@ -306,14 +364,15 @@ show-home=false
 
 [shell/extensions/gsconnect]
 devices=['2d945993e5d2482880324006704a94c7']
-enabled=true
+discoverable=false
+enabled=false
 keep-alive-when-locked=true
 name='sumedh-Dell-G15-5520'
 
 [shell/extensions/gsconnect/device/2d945993e5d2482880324006704a94c7]
 certificate-pem='-----BEGIN CERTIFICATE-----\nMIIBijCCATGgAwIBAgIBATAKBggqhkjOPQQDBDBPMSkwJwYDVQQDDCAyZDk0NTk5\nM2U1ZDI0ODI4ODAzMjQwMDY3MDRhOTRjNzEUMBIGA1UECwwLS0RFIENvbm5lY3Qx\nDDAKBgNVBAoMA0tERTAeFw0yNDA1MjkxODMwMDBaFw0zNTA1MjkxODMwMDBaME8x\nKTAnBgNVBAMMIDJkOTQ1OTkzZTVkMjQ4Mjg4MDMyNDAwNjcwNGE5NGM3MRQwEgYD\nVQQLDAtLREUgQ29ubmVjdDEMMAoGA1UECgwDS0RFMFkwEwYHKoZIzj0CAQYIKoZI\nzj0DAQcDQgAEIucaTwa6qNzcn9ZspR0qa/EOkw3Qtn5BlSw3t4jXf2ZkU9TqeLv4\nJhqztxd78M3hiTUmIoWE6+bQtlYvXnFMfjAKBggqhkjOPQQDBANHADBEAiA/l/Rf\nhXP0L7zkHF+YMdl9P1pyuQqexJAsni1lEzVKGwIgW/tCNfQOKtQNRvROsCbzqvdB\ntNYIpv1DZRQJ1AgUnuI=\n-----END CERTIFICATE-----\n'
 incoming-capabilities=['kdeconnect.battery', 'kdeconnect.bigscreen.stt', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.contacts.request_all_uids_timestamps', 'kdeconnect.contacts.request_vcards_by_uid', 'kdeconnect.findmyphone.request', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.action', 'kdeconnect.notification.reply', 'kdeconnect.notification.request', 'kdeconnect.ping', 'kdeconnect.runcommand', 'kdeconnect.sftp.request', 'kdeconnect.share.request', 'kdeconnect.share.request.update', 'kdeconnect.sms.request', 'kdeconnect.sms.request_attachment', 'kdeconnect.sms.request_conversation', 'kdeconnect.sms.request_conversations', 'kdeconnect.systemvolume', 'kdeconnect.telephony.request', 'kdeconnect.telephony.request_mute']
-last-connection='lan://172.20.84.172:1716'
+last-connection='lan://172.20.84.216:1716'
 name='realme 10 Pro+ 5G'
 outgoing-capabilities=['kdeconnect.battery', 'kdeconnect.bigscreen.stt', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.connectivity_report', 'kdeconnect.contacts.response_uids_timestamps', 'kdeconnect.contacts.response_vcards', 'kdeconnect.findmyphone.request', 'kdeconnect.mousepad.echo', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.request', 'kdeconnect.ping', 'kdeconnect.presenter', 'kdeconnect.runcommand.request', 'kdeconnect.sftp', 'kdeconnect.share.request', 'kdeconnect.sms.attachment_file', 'kdeconnect.sms.messages', 'kdeconnect.systemvolume.request', 'kdeconnect.telephony']
 paired=true
@@ -328,7 +387,7 @@ receive-content=true
 send-content=true
 
 [shell/extensions/gsconnect/device/2d945993e5d2482880324006704a94c7/plugin/notification]
-applications='{"Printers":{"iconName":"org.gnome.Settings-printers-symbolic","enabled":true},"Events and Tasks Reminders":{"iconName":"org.gnome.Evolution-alarm-notify","enabled":true},"Zenity":{"iconName":"application-x-executable","enabled":true},"Snapd User Session Agent":{"iconName":"/usr/share/snapd/snapcraft-logo-bird.svg","enabled":true},"Disks":{"iconName":"org.gnome.DiskUtility","enabled":true},"Date & Time":{"iconName":"org.gnome.Settings-time-symbolic","enabled":true},"Power":{"iconName":"org.gnome.Settings-power-symbolic","enabled":true},"Rhythmbox":{"iconName":"org.gnome.Rhythmbox3","enabled":true},"Disk Usage Analyzer":{"iconName":"org.gnome.baobab","enabled":true},"Komikku":{"iconName":"info.febvre.Komikku","enabled":true},"Color Management":{"iconName":"org.gnome.Settings-color-symbolic","enabled":true},"Backups":{"iconName":"org.gnome.DejaDup","enabled":true},"Files":{"iconName":"org.gnome.Nautilus","enabled":true},"Clocks":{"iconName":"org.gnome.clocks","enabled":true},"File Roller":{"iconName":"org.gnome.FileRoller","enabled":true},"Spotify":{"iconName":"","enabled":true},"Telegram Desktop":{"iconName":"","enabled":true},"Brave":{"iconName":"file:///tmp/.org.chromium.Chromium.Tu7PpU/logo.png","enabled":true}}'
+applications='{"Printers":{"iconName":"org.gnome.Settings-printers-symbolic","enabled":true},"Events and Tasks Reminders":{"iconName":"org.gnome.Evolution-alarm-notify","enabled":true},"Zenity":{"iconName":"application-x-executable","enabled":true},"Snapd User Session Agent":{"iconName":"/usr/share/snapd/snapcraft-logo-bird.svg","enabled":true},"Disks":{"iconName":"org.gnome.DiskUtility","enabled":true},"Date & Time":{"iconName":"org.gnome.Settings-time-symbolic","enabled":true},"Power":{"iconName":"org.gnome.Settings-power-symbolic","enabled":true},"Rhythmbox":{"iconName":"org.gnome.Rhythmbox3","enabled":true},"Disk Usage Analyzer":{"iconName":"org.gnome.baobab","enabled":true},"Komikku":{"iconName":"info.febvre.Komikku","enabled":true},"Color Management":{"iconName":"org.gnome.Settings-color-symbolic","enabled":true},"Backups":{"iconName":"org.gnome.DejaDup","enabled":true},"Files":{"iconName":"org.gnome.Nautilus","enabled":true},"Clocks":{"iconName":"org.gnome.clocks","enabled":true},"File Roller":{"iconName":"org.gnome.FileRoller","enabled":true},"Spotify":{"iconName":"","enabled":true},"Telegram Desktop":{"iconName":"","enabled":true},"Brave":{"iconName":"file:///tmp/.org.chromium.Chromium.Tu7PpU/logo.png","enabled":true},"Motrix":{"iconName":"","enabled":true},"Software":{"iconName":"org.gnome.Software","enabled":true}}'
 
 [shell/extensions/gsconnect/device/2d945993e5d2482880324006704a94c7/plugin/share]
 receive-directory='/home/sumedh/Downloads'
@@ -375,9 +434,30 @@ three-finger=false
 [shell/world-clocks]
 locations=@av []
 
+[shotwell/preferences/ui]
+display-basic-properties=true
+display-extended-properties=false
+display-photo-comments=false
+display-photo-ratings=true
+display-photo-tags=true
+display-photo-titles=false
+display-search-bar=false
+display-sidebar=true
+events-sort-ascending=false
+library-photos-sort-ascending=false
+library-photos-sort-by=2
+show-welcome-dialog=false
+sidebar-position=180
+
+[shotwell/preferences/window]
+library-height=768
+library-maximize=false
+library-width=1024
+
 [software]
-check-timestamp=int64 1756828238
-flatpak-purge-timestamp=int64 1756838333
+check-timestamp=int64 1757930206
+flatpak-purge-timestamp=int64 1757400731
+update-notification-timestamp=int64 1757509484
 
 [terminal/legacy/keybindings]
 select-all='<Primary><Shift>a'

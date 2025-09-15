@@ -1,0 +1,6 @@
+let promise = new Promise ((resolve,reject)=>setTimeout(()=>reject("Promise not fullfilled"))
+.then(reject=>console.log("a:",reject)
+.then(reject=>console.log("b:",reject)
+.then(reject=>console.log("c:",reject)
+.then(reject=>console.log("d:",reject)
+)
